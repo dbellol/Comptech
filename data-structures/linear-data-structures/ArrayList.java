@@ -11,12 +11,12 @@ package javaapplication9;
  */
 public class ArrayList {
 
-    Object Arrayd[] = new Object[10];
+    Comparable Arrayd[] = new Comparable[10];
     int cola = 0;
 
-    public void push(Object dato) {
+    public void push(Comparable dato) {
         if (cola == Arrayd.length) {
-            Object Nuevo_Array[] = new Object[Arrayd.length * 2]; //crecimiento doble del tamaño
+            Comparable Nuevo_Array[] = new Comparable[Arrayd.length * 2]; //crecimiento doble del tamaño
             for (int i = 0; i < Arrayd.length; i++) {
                 Nuevo_Array[i] = Arrayd[i];
             }
