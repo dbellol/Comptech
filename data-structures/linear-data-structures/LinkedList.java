@@ -50,8 +50,36 @@ class Main <T extends Comparable<T>>{
         }
         return false;
     }
+    
+    /*
+    public T getFront(Node head){
+    return head.data;
+    }
+    public T getBack (Node head){
+    Node start = head;
+        while(start != null){
+            start = start.next;
+        }
+        return start.data;
+    }
 
-    public Node insertTop (Node head,T data){
+    */
+    public Node popFront (Node head){
+        if(head.next == null){
+            return null;
+        }
+        head = head.next;
+        return head;
+    }
+    public Node popBack (Node head){
+    Node start = head;
+    while(start.next != null){
+        start = start.next;
+    }
+    return start;
+    
+    }
+    public Node insertFront (Node head,T data){
         Node start = new Node(data);
         start.next = head;
         return start;
