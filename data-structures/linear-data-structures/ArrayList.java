@@ -9,15 +9,15 @@ package javaapplication9;
  *
  * @author tique
  */
-public class ArrayList {
+public class ArrayList<T extends Comparable<T>>{
 
-    Comparable Arrayd[] = new Comparable[10];
+    T Arrayd[] = (T[]) new Comparable[10];
     int cola = 0;
 
-    public void push(Comparable dato) {
+    public void push(T dato) {
         if (cola == Arrayd.length) {
-            Comparable Nuevo_Array[] = new Comparable[Arrayd.length * 2]; //crecimiento doble del tamaño
-            for (int i = 0; i < Arrayd.length; i++) {
+            T Nuevo_Array[] = (T[]) new Comparable[Arrayd.length * 2]; //crecimiento doble del tamaÃ±o
+            for (int i = 0; i < cola; i++) {
                 Nuevo_Array[i] = Arrayd[i];
             }
             Arrayd = Nuevo_Array;
