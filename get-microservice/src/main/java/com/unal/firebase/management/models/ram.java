@@ -3,15 +3,16 @@ package com.unal.firebase.management.models;
 import lombok.Data;
 
 @Data
-public class ram {
+public class Ram {
     
-    private String arquitectura;
-    private int capacidad;
-    private int id;
-    private String marca;
-    private int nombre;
-    private int precio;
-    private int tasaTranferencia;
-    private int velocidad;
+    public String documentId;
+    public String arquitectura;
+    public int capacidad;
+    public int id;
+    public String marca;
+    public int nombre;
+    public int precio;
+    public int tasaTranferencia;
+    public int velocidad;
     
 }

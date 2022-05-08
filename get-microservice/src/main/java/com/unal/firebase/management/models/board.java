@@ -3,16 +3,17 @@ package com.unal.firebase.management.models;
 import lombok.Data;
 
 @Data
-public class board {
+public class Board {
     
-    private int chipset;
-    private String compatibilidadArqRam;
-    private int id;
-    private String marca;
-    private int maxRam;
-    private String nombre;
-    private int precio;
-    private int puertos;
-    private String socket;
+    public String documentId;
+    public int chipset;
+    public String compatibilidadArqRam;
+    public int id;
+    public String marca;
+    public int maxRam;
+    public String nombre;
+    public int precio;
+    public int puertos;
+    public String socket;
     
 }
