@@ -1,9 +1,9 @@
-public class CrearALC <T extends Comparable<T>>{  
+public class CrearALC {  
     //Se muestra el nodo como una lista 
     public class Node{  
         T dato;  
         Node siguiente;   
-        public Node(T dato) {  
+        public Node(int dato) {  
             this.dato = dato;  
         }  
     }  
@@ -13,7 +13,7 @@ public class CrearALC <T extends Comparable<T>>{
     public Node cola = null;  
   
     //esta funcion añade el nuevo nodo al final de la lista 
-    public void add(T dato){  
+    public void add(int dato){  
 
         //Se crea el nuevo nodo
         Node newNode = new Node(dato);  
